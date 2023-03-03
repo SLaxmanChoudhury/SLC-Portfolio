@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+        html {
+            scroll-behavior: smooth;
+
+        }
+        body{
+         
+            width: 100%;
+        }
+        @media(min-width: 150px) and (max-width: 400px) {
+            body{
+         
+                width: 300%;
+            }
+    
+          }
+
+          .po {
+              color: #ffffff;
+              font-size: 40px;
+              font-weight: bold;
+              font-family: 'Bree Serif', serif;
+          }
+  
+          .po::after {
+              content: "";
+              background-color: #2e00f9;
+              height: 3px;
+              width: 0%;
+              color: #000000;
+              display: block;
+              transition: 0.3s ease-in-out;
+          }
+  
+          .po:hover::after {
+              content: "";
+              background-color: #00b2f9;
+  
+              height: 2px;
+              width: 100%;
+  
+              display: block;
+          }
+  
+          .po:hover {
+              color: #00b2f9;
+  
+          }
+  
+          .port {
+  
+  
+              padding: 0px;
+              margin: 0px;
+              box-sizing: border-box;
+              font-size: 40px;
+              letter-spacing: 2px;
+              cursor: pointer;
+              font-weight: bold;
+              font-family: 'cursive';
+  
+          }
+          .ms {
+            color: #00b2f9;
+        }
+
+        .ms:hover {
+            color: #ffffff;
+        }
+        .l {
+            background-color: #00b2f9;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bolder;
+            text-decoration: none;
+            border: 2px solid transparent;
+            border-radius: 30px;
+
+            transition: .4s;
+        }
+
+        .l:hover {
+            color: #ffffff;
+            background-color: transparent;
+            border: 2px solid #2e00f9;
+            ;
+            box-shadow: 0px 0px 5px rgb(47, 0, 255), 0px 0px 15px #ffffff;
+            ;
+            cursor: pointer;
+        }
+        ol{
+            margin: 10px;
+        }

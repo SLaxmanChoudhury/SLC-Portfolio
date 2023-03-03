@@ -1,0 +1,320 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+        html {
+            scroll-behavior: smooth;
+
+        }
+        body{
+         
+            width: 100%;
+        }
+        @media(min-width: 150px) and (max-width: 400px) {
+            body{
+         
+                width: 300%;
+            }
+    
+          }
+         
+        
+        .navbar-collapse {
+            flex-grow: 0;
+
+        }
+
+        .overflow-scroll {
+            overflow: scroll;
+        }
+
+        .overflow-scroll::-webkit-scrollbar {
+            display: none;
+        }
+
+        #imga:hover img {
+            transform: scale(1.15);
+
+        }
+
+        .po {
+            color: #ffffff;
+        }
+
+        .po::after {
+            content: "";
+            background-color: #2e00f9;
+            height: 3px;
+            width: 0%;
+            color: #000000;
+            display: block;
+            transition: 0.3s ease-in-out;
+        }
+
+        .po:hover::after {
+            content: "";
+            background-color: #00b2f9;
+            ;
+            height: 2px;
+            width: 100%;
+
+            display: block;
+        }
+
+        .po:hover {
+            color: #00b2f9;
+
+        }
+
+        .an {
+            color: white;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .an::after {
+            content: "";
+            background-color: rgb(34, 0, 255);
+            height: 3px;
+            width: 0%;
+
+            display: block;
+            transition: 0.3s ease-in-out;
+        }
+
+        .an:hover::after {
+            content: "";
+            background-color: rgb(34, 0, 255);
+            height: 2px;
+            width: 100%;
+
+            display: block;
+        }
+
+        .card {
+            border: 2px solid #00b2f9;
+        }
+
+
+
+        .card:hover {
+            color: #2e00f9;
+            background-color: transparent;
+            border: 2px solid #ffffff;
+
+            box-shadow: 0px 0px 5px rgb(255, 255, 255), 0px 0px 15px #2e00f9;
+
+            cursor: pointer;
+        }
+
+        .p {
+            color: #00b2f9;
+            font-size: 50px;
+            font-family: 'Bree Serif', serif;
+
+        }
+
+        .co {
+            color: #000000;
+            font-weight: bold;
+          
+           
+            font-family: 'Bree Serif', serif;
+
+        }
+
+        .p:hover {
+            color: #2e00f9;
+        }
+
+        .cont .drop{
+            position: relative;
+            width: 350px;
+            height: 350px;
+            background-image: linear-gradient(rgb(255, 255, 255) ,rgb(47, 0, 255));
+            /* box-shadow: inset 
+            20px 20px 20px  rgba(0,0,0,0.05),
+            25px 35px 20px  rgba(0,0,0,0.05),
+            25px 30px 30px  rgba(0,0,0,0.05),
+            inset -20px -20px 25px rgba(255,255,255,0.9); */
+            transition: 0.5s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 52% 48% 33% 67% / 38% 45% 55% 62%;
+            animation: kc 5s linear infinite;
+            
+        }
+
+        @keyframes kc{
+            33%{
+            
+                border-radius: 56% 44% 30% 70% / 61% 80% 20% 39% ;
+            }
+            66%{
+                border-radius: 72% 28% 22% 78% / 73% 64% 36% 27% ;
+            }
+            100%{
+                border-radius: 52% 48% 33% 67% / 38% 45% 55% 62%;
+            }
+        
+        }
+
+        .slc{
+            text-align: center;
+            font-size: 90px;
+            /* line-height: 160px; */
+            /* margin-left: -10px; */
+            color: transparent;
+            -webkit-text-stroke: 1px rgb(0, 0, 0);
+            background-image: url(back.png);
+            -webkit-background-clip: text;
+            background-position: 0 0;
+            
+            animation: name 20s linear infinite;
+        }
+        @keyframes name{
+            100%{
+                background-position: 2000px 0;
+            }
+        }
+
+        .c {
+            background-color: #00b2f9;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bolder;
+            text-decoration: none;
+            border: 2px solid transparent;
+            border-radius: 30px;
+            font-family: 'Baloo Bhai 2', cursive;
+            transition: .4s;
+        }
+
+        .c:hover {
+            color: #ffffff;
+            background-color: transparent;
+            border: 2px solid #ffffff;
+            ;
+            box-shadow: 0px 0px 5px rgb(255, 255, 255), 0px 0px 15px #2e00f9;
+            ;
+            cursor: pointer;
+        }
+
+        .l {
+            background-color: #00b2f9;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bolder;
+            text-decoration: none;
+            border: 2px solid transparent;
+            border-radius: 30px;
+
+            transition: .4s;
+        }
+
+        .l:hover {
+            color: #ffffff;
+            background-color: transparent;
+            border: 2px solid #2e00f9;
+            ;
+            box-shadow: 0px 0px 5px rgb(47, 0, 255), 0px 0px 15px #ffffff;
+            ;
+            cursor: pointer;
+        }
+
+        .ms {
+            color: #00b2f9;
+        }
+
+        .ms:hover {
+            color: #ffffff;
+        }
+
+        .port {
+
+
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-size: 40px;
+            letter-spacing: 2px;
+            cursor: pointer;
+            font-weight: bold;
+            font-family: 'cursive';
+
+        }
+
+        #hi {
+            position: relative;
+
+
+        }
+
+        #hi::before {
+            content: "";
+            position: absolute;
+          
+                background-image: linear-gradient(rgb(84, 189, 255),rgb(255, 255, 255));
+
+            /* background: url(Image/background.png) no-repeat center center/cover; */
+            align-items: center;
+            justify-content: center;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            /* opacity: 0.09; */
+        }
+
+        .ham {
+            color: white;
+            font-family: 'Baloo Bhai 2', cursive;
+            text-align: center;
+            padding: 4px;
+            font-size: 20px;
+            font-weight: bolder;
+            text-decoration: none;
+            border: 2px solid transparent;
+            border-radius: 30px;
+            font-family: 'Baloo Bhai 2', cursive;
+            transition: .4s;
+
+
+        }
+
+        .ham:hover {
+            color: #ffffff;
+            background-color: transparent;
+            border: 2px solid #ffffff;
+            border-radius: 30px;
+            ;
+            box-shadow: 0px 0px 5px rgb(255, 255, 255), 0px 0px 15px #2e00f9;
+            ;
+            cursor: pointer;
+
+        }
+
+        #tech {
+            position: relative;
+
+
+        }
+
+        #tech::before {
+            content: "";
+            position: absolute;
+            background: url(Image/bk.jpg.webp) no-repeat center center/cover;
+            align-items: center;
+            justify-content: center;
+            z-index: -1;
+            height: 60%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0.3;
+        }
+
+
+       
